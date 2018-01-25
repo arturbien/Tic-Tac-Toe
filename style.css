@@ -1,0 +1,284 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Homemade Apple', cursive;
+}
+body {
+  background-image: url('images/wallTexture.jpg');
+  background-size: 100% 100%;
+}
+h1 {
+  color: white;
+  font-size: 80;
+  font-weight: 100;
+}
+.frame {
+  position: fixed;
+  top: 20px;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1022px;
+  height: 666px;
+  margin: 0 auto;
+  background-image: url('images/frame.png');
+  background-size: 100% 100%;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+  -webkit-box-shadow: -11px 17px 47px 17px rgba(0,0,0,0.75);
+  -moz-box-shadow: -11px 17px 47px 17px rgba(0,0,0,0.75);
+  box-shadow: -11px 17px 47px 17px rgba(0,0,0,0.75);
+  pointer-events: none;
+  z-index: 10;
+}
+.wrapper {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 540px;
+  min-width: 900px;
+  background-image: url('images/blackboard.jpg');
+  background-size: 100% 100%;
+}
+#canvas {
+  width: 900px;
+  height: 540px;
+  margin: auto auto;
+  z-index: 9;
+}
+
+#oBg {
+  position: absolute;
+  top: 32px;
+  left: 16px;
+  width: 25%;
+  height: 21%;
+  z-index: -1;
+  opacity: 1;
+}
+
+
+#xBg {
+  position: absolute;
+  top: 22px;
+  right: 18px;
+  width: 25%;
+  height: 21%;
+  -webkit-transform: rotate(190deg);
+  -moz-transform: rotate(190deg);
+  -ms-transform: rotate(190deg);
+  -o-transform: rotate(190deg);
+  transform: rotate(190deg);
+  z-index: -1;
+}
+#banner {
+  position: absolute;
+  top: 22px;
+  left: 280px;
+  width: 360px;
+  height: 120px;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+#oSymbol {
+  position: absolute;
+  top: 46px;
+  left: 70px;
+  width: 86px;
+  height: 74px;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+#xSymbol {
+  position: absolute;
+  top: 44px;
+  right: 76px;
+  width: 94px;
+  height: 80px;
+  opacity: 0.80;
+  background-size: 100% 100%;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+#oArrow {
+  position: absolute;
+  top: 115px;
+  left: 100px;
+  width: 120px;
+  height: 50px;
+  opacity: 0.08;
+  -webkit-transform: rotate(160deg);
+  -moz-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+  transform: rotate(160deg);
+  z-index: -1;
+}
+
+#xArrow {
+  position: absolute;
+  top: 52px;
+  right: 146px;
+  width: 74px;
+  height: 54px;
+  opacity: 0.45;
+  z-index: -1;
+}
+
+#willy {
+  position: absolute;
+  top: 82px;
+  right: 65px;
+  width: 50px;
+  height: 45px;
+  opacity: 0.4;
+  z-index: 0;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  cursor: pointer;
+}
+
+#sorry {
+  background-image: url('images/sorry.png');
+  background-size: 100% 162%;
+  position: fixed;
+  bottom: 250px;
+  right: -260px;
+  width: 160px;
+  height: 100px;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#boner {
+  position: fixed;
+  bottom: 250px;
+  left: -260px;
+  width: 200px;
+  height: 100px;
+  z-index: 10;
+  opacity: 0;
+   -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.visibility {
+  opacity: 0.9 !important;
+}
+
+
+
+#kid {
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  width: 160px;
+  height: 120px;
+  z-index: -1;
+  opacity: 0.08;
+}
+
+#handOne {
+  position: absolute;
+  top: 180px;
+  left: 140px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  opacity: 0.04;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+   transform: scaleX(-1);
+   -ms-filter: "FlipH";
+   filter: FlipH;
+}
+#handTwo {
+  position: absolute;
+  bottom: 100px;
+  right: 85px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  opacity: 0.05;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#backArrow {
+  position: fixed;
+  display: none;
+  bottom: -120px;
+  left: 20px;
+  width: 120px;
+  height: 60px;
+  opacity: 0.4;
+  -webkit-transform: rotate(170deg);
+  -moz-transform: rotate(170deg);
+  -ms-transform: rotate(170deg);
+  -o-transform: rotate(170deg);
+  transform: rotate(170deg);
+  z-index: 15;
+  cursor: pointer;
+}
+
+.menu {
+  list-style-type: none;
+  color: white;
+  font-size: 52px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.hl {
+    opacity: 0.7 !important;
+  }
+
+li {
+  display: inline-block;
+  margin-bottom: 50px;
+  opacity: 0.2;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+
