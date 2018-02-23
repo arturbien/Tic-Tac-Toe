@@ -1,5 +1,6 @@
 # Tic-Tac-Toe
-### Animated game made with P5.js (P5.scribble.js)
+Animated game made with P5.js (P5.scribble.js)
+### Live demo [HERE](https://arturbien.github.io/Tic-Tac-Toe/)
 
 ![demo3](https://user-images.githubusercontent.com/28541613/35410747-ac8c9296-0216-11e8-8ea9-4be246f62b19.png)
 
